@@ -79,6 +79,8 @@ dependency_overrides:
   page_transition: 2.1.0
   webview_flutter: any
   webview_flutter_wkwebview: any
+  http: any
+  internet_file: any
 
 
 dev_dependencies:
