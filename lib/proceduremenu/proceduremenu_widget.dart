@@ -65,7 +65,7 @@ class _ProceduremenuWidgetState extends State<ProceduremenuWidget> {
             },
           ),
           title: Text(
-            'Page Title',
+            'PROCEDURES',
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   font: GoogleFonts.interTight(
                     fontWeight:
