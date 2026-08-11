@@ -75,10 +75,8 @@ dependencies:
   cupertino_icons: ^1.0.0
 
 dependency_overrides:
-  font_awesome_flutter: 10.7.0
-  page_transition: 2.1.0
-  webview_flutter: any
-  webview_flutter_wkwebview: any
+  font_awesome_flutter: 10.8.0
+  page_transition: 2.2.2
   http: any
   internet_file: any
 
