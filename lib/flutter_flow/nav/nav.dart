@@ -33,12 +33,32 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
-      errorBuilder: (context, state) => HomeWidget(),
+      errorBuilder: (context, state) => appStateNotifier.showSplashImage
+          ? Builder(
+              builder: (context) => Container(
+                color: Colors.transparent,
+                child: Image.asset(
+                  'assets/images/8814801C-A2A3-4384-901E-780F3B442D4A.png',
+                  fit: BoxFit.fill,
+                ),
+              ),
+            )
+          : HomeWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => HomeWidget(),
+          builder: (context, _) => appStateNotifier.showSplashImage
+              ? Builder(
+                  builder: (context) => Container(
+                    color: Colors.transparent,
+                    child: Image.asset(
+                      'assets/images/8814801C-A2A3-4384-901E-780F3B442D4A.png',
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                )
+              : HomeWidget(),
         ),
         FFRoute(
           name: ProceduresWidget.routeName,
