@@ -75,10 +75,11 @@ dependencies:
   cupertino_icons: ^1.0.0
 
 dependency_overrides:
-  device_info_plus: 11.5.0
-  device_info_plus_platform_interface: 7.0.3
-  http: 1.4.0
-  uuid: any
+  font_awesome_flutter: 10.7.0
+  page_transition: 2.1.0
+  webview_flutter: any
+  webview_flutter_wkwebview: any
+
 
 dev_dependencies:
   flutter_launcher_icons: 0.13.1
