@@ -78,7 +78,7 @@ dependency_overrides:
   device_info_plus: 11.5.0
   device_info_plus_platform_interface: 7.0.3
   http: 1.4.0
-  uuid: ^4.0.0
+  uuid: any
 
 dev_dependencies:
   flutter_launcher_icons: 0.13.1
