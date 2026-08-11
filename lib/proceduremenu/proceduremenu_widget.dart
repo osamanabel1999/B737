@@ -160,20 +160,13 @@ class _ProceduremenuWidgetState extends State<ProceduremenuWidget> {
                   ),
                 ),
               ),
-              if (responsiveVisibility(
-                context: context,
-                phone: false,
-                tablet: false,
-                tabletLandscape: false,
-                desktop: false,
-              ))
-                FlutterFlowAdBanner(
-                  width: MediaQuery.sizeOf(context).width * 1.0,
-                  height: 50.0,
-                  showsTestAd: false,
-                  iOSAdUnitID: 'ca-app-pub-7880697829268273/1962313303',
-                  androidAdUnitID: 'ca-app-pub-7880697829268273/3249530151',
-                ),
+              FlutterFlowAdBanner(
+                width: MediaQuery.sizeOf(context).width * 1.0,
+                height: 50.0,
+                showsTestAd: false,
+                iOSAdUnitID: 'ca-app-pub-7880697829268273/1962313303',
+                androidAdUnitID: 'ca-app-pub-7880697829268273/3249530151',
+              ),
             ],
           ),
         ),
